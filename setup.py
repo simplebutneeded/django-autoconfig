@@ -1,11 +1,10 @@
 '''Setup file for django-autoconfig.'''
 from setuptools import setup, find_packages
-from django_autoconfig.version import __VERSION__
 
 import sys
 
 INSTALL_REQUIRES = [
-    'django < 2.1',
+    'django < 2.3',
 ]
 
 if sys.version_info < (2, 7):
@@ -13,7 +12,7 @@ if sys.version_info < (2, 7):
 
 setup(
     name='django-autoconfig',
-    version=__VERSION__,
+    version='0.9.0',
     packages=find_packages(),
     description='Automatic configuration of Django projects based on the application requirements.',
     long_description=open('README.rst').read(),
